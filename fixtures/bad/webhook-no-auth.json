@@ -1,0 +1,85 @@
+{
+  "name": "Orders: webhook without auth",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "orders",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000001",
+      "name": "Order webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "wh-orders"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO shop.events (event_id, payload) VALUES ($1, $2) ON CONFLICT (event_id) DO NOTHING;",
+        "options": {
+          "queryReplacement": "={{ [$json.body.id, JSON.stringify($json.body)] }}"
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000002",
+      "name": "Store event",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { ok: true } }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000003",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Order webhook": {
+      "main": [
+        [
+          {
+            "node": "Store event",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store event": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureOrderswebh"
+}

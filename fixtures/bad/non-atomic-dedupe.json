@@ -1,0 +1,114 @@
+{
+  "name": "Events: notify once",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "events",
+        "responseMode": "onReceived",
+        "options": {},
+        "authentication": "headerAuth"
+      },
+      "id": "00000000-0000-4000-8000-000000000019",
+      "name": "Event webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "wh-events"
+    },
+    {
+      "parameters": {
+        "operation": "removeItemsProcessedPreviously",
+        "dedupeValue": "={{ $json.body.id }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000020",
+      "name": "Skip seen events",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const data = $getWorkflowStaticData('global');\ndata.seen = data.seen || [];\nconst fresh = $input.all().filter((i) => !data.seen.includes(i.json.body.id));\nfresh.forEach((i) => data.seen.push(i.json.body.id));\nreturn fresh;"
+      },
+      "id": "00000000-0000-4000-8000-000000000021",
+      "name": "Remember event",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C0000000",
+          "mode": "id"
+        },
+        "text": "=New event {{ $json.body.type }}",
+        "otherOptions": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000022",
+      "name": "Notify team",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        880,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Event webhook": {
+      "main": [
+        [
+          {
+            "node": "Skip seen events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skip seen events": {
+      "main": [
+        [
+          {
+            "node": "Remember event",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remember event": {
+      "main": [
+        [
+          {
+            "node": "Notify team",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureEventsnoti"
+}

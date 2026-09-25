@@ -1,0 +1,84 @@
+{
+  "name": "Reminders: SMS",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000029",
+      "name": "Every 15 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "from": "+15550000000",
+        "to": "={{ $json.phone }}",
+        "message": "=Reminder: your appointment is tomorrow.",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000030",
+      "name": "Send reminder SMS",
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "00000000-0000-4000-8000-000000000031",
+      "name": "Mark as reminded",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        660,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Every 15 minutes": {
+      "main": [
+        [
+          {
+            "node": "Send reminder SMS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send reminder SMS": {
+      "main": [
+        [
+          {
+            "node": "Mark as reminded",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureRemindersS"
+}

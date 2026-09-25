@@ -1,0 +1,81 @@
+{
+  "name": "Shop: public chat assistant",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "mode": "hostedChat",
+        "authentication": "none",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000013",
+      "name": "Public chat",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "chat-public"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000014",
+      "name": "Product assistant",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.example-shop.test/v1/products?q={{ $fromAI('query') }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000015",
+      "name": "Search catalogue",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Public chat": {
+      "main": [
+        [
+          {
+            "node": "Product assistant",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search catalogue": {
+      "ai_tool": [
+        [
+          {
+            "node": "Product assistant",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureShoppublic"
+}

@@ -1,0 +1,162 @@
+{
+  "name": "Support: AI agent with write tools",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000007",
+      "name": "When chat message received",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "chat-internal"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "Only refund orders that belong to the customer. Never delete orders."
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000008",
+      "name": "Support agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4.1-mini",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000009",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=DELETE FROM shop.orders WHERE id = {{ $fromAI('order_id', 'order to delete', 'number') }};",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000010",
+      "name": "Delete order",
+      "type": "n8n-nodes-base.postgresTool",
+      "typeVersion": 2.5,
+      "position": [
+        880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.example-payments.test/v1/refunds",
+        "sendBody": true,
+        "jsonBody": "={{ { order: $fromAI('order_id'), amount: $fromAI('amount') } }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000011",
+      "name": "Issue refund",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "name": "lookup_customer",
+        "workflowId": {
+          "__rl": true,
+          "value": "SubLookup0000001",
+          "mode": "list"
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000012",
+      "name": "Look up customer",
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Support agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Support agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete order": {
+      "ai_tool": [
+        [
+          {
+            "node": "Support agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Issue refund": {
+      "ai_tool": [
+        [
+          {
+            "node": "Support agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Look up customer": {
+      "ai_tool": [
+        [
+          {
+            "node": "Support agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureSupportAIa"
+}
