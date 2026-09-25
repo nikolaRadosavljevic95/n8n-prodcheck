@@ -1,0 +1,3938 @@
+{
+ "generatedAt": "2026-09-25T08:26:43.742Z",
+ "source": "npm advisory database (registry.npmjs.org/-/npm/v1/security/advisories/bulk), which mirrors the GitHub Advisory Database",
+ "stable": "2.40.7",
+ "advisories": [
+  {
+   "url": "https://github.com/advisories/GHSA-2434-3x6q-8r99",
+   "title": "n8n: External Secrets Accessible via Workflow Expressions Outside Credentials",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2434-3x6q-8r99",
+   "title": "n8n: External Secrets Accessible via Workflow Expressions Outside Credentials",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2j5h-858j-5mpf",
+   "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2j5h-858j-5mpf",
+   "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2j5h-858j-5mpf",
+   "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2p9h-rqjw-gm92",
+   "title": "n8n Vulnerable to Stored XSS via Various Nodes",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-80"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2p9h-rqjw-gm92",
+   "title": "n8n Vulnerable to Stored XSS via Various Nodes",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-80"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2p9h-rqjw-gm92",
+   "title": "n8n Vulnerable to Stored XSS via Various Nodes",
+   "severity": "high",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-80"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2vff-hj5x-8gq7",
+   "title": "n8n: Prototype Pollution enables confused-deputy execution via public webhooks",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2vff-hj5x-8gq7",
+   "title": "n8n: Prototype Pollution enables confused-deputy execution via public webhooks",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2vx9-7wpg-88jq",
+   "title": "n8n: Legacy ExecuteWorkflow Node Bypassed File Path Restrictions",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.19.3",
+   "cvss": {
+    "score": 6.4
+   },
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2x35-3fw4-9jr4",
+   "title": "n8n: Send Email Node Arbitrary File Read and SSRF via Nodemailer Content-Object Type Confusion",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-200",
+    "CWE-843",
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2x35-3fw4-9jr4",
+   "title": "n8n: Send Email Node Arbitrary File Read and SSRF via Nodemailer Content-Object Type Confusion",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-200",
+    "CWE-843",
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2x35-3fw4-9jr4",
+   "title": "n8n: Send Email Node Arbitrary File Read and SSRF via Nodemailer Content-Object Type Confusion",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-200",
+    "CWE-843",
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2xcx-75h9-vr9h",
+   "title": "n8n's domain allowlist bypass enables credential exfiltration",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.121.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-20",
+    "CWE-522"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-2xgm-wc4g-5jvg",
+   "title": "n8n: Improper Authorization Allows Authenticated Users to Assign Workflows to Folders in Other Projects",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.28.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-33q9-f52j-gc75",
+   "title": "n8n: Unauthenticated Endpoint Allows Cancellation of Any User's Active Test Webhook",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-306"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-34ff-336r-5q23",
+   "title": "n8n: Domain-Restriction Bypass via Unguarded Model-Search Endpoint in OpenAI Chat Model Node",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-34ff-336r-5q23",
+   "title": "n8n: Domain-Restriction Bypass via Unguarded Model-Search Endpoint in OpenAI Chat Model Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-34ff-336r-5q23",
+   "title": "n8n: Domain-Restriction Bypass via Unguarded Model-Search Endpoint in OpenAI Chat Model Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-35jj-42hp-8gmq",
+   "title": "n8n: Anonymous Approval-Gate Bypass via Reused resumeToken over the Chat WebSocket",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-35jj-42hp-8gmq",
+   "title": "n8n: Anonymous Approval-Gate Bypass via Reused resumeToken over the Chat WebSocket",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-35q8-9mj6-wjmf",
+   "title": "n8n: SSO Instance-Role Provisioning Allows Privilege Escalation to Instance Owner",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-35q8-9mj6-wjmf",
+   "title": "n8n: SSO Instance-Role Provisioning Allows Privilege Escalation to Instance Owner",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-35q8-9mj6-wjmf",
+   "title": "n8n: SSO Instance-Role Provisioning Allows Privilege Escalation to Instance Owner",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-364x-8g5j-x2pr",
+   "title": "n8n has XSS in its Credential Management Flow",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.6.4",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-364x-8g5j-x2pr",
+   "title": "n8n has XSS in its Credential Management Flow",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.7.0 <2.8.0",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-365g-vjw2-grx8",
+   "title": "n8n: Execute Command Node Allows Authenticated Users to Run Arbitrary Commands on Host",
+   "severity": "high",
+   "vulnerable_versions": "<=1.114.4",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-3875-8gcx-7v46",
+   "title": "n8n: Credential exfiltration via Allowed HTTP Request Domains Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.20.0",
+   "cvss": {
+    "score": 9.1
+   },
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-38c7-23hj-2wgq",
+   "title": "n8n has Webhook Forgery on Zendesk Trigger Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.18",
+   "cvss": {
+    "score": 4
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-38c7-23hj-2wgq",
+   "title": "n8n has Webhook Forgery on Zendesk Trigger Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.6.2",
+   "cvss": {
+    "score": 4
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-3c7f-5hgj-h279",
+   "title": "n8n has XSS in Chat Trigger Node through Custom CSS",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-3c7f-5hgj-h279",
+   "title": "n8n has XSS in Chat Trigger Node through Custom CSS",
+   "severity": "moderate",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-3c7f-5hgj-h279",
+   "title": "n8n has XSS in Chat Trigger Node through Custom CSS",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-42h7-m79w-wvg5",
+   "title": "n8n: Stored XSS in Chat Trigger Node",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-42h7-m79w-wvg5",
+   "title": "n8n: Stored XSS in Chat Trigger Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-42h7-m79w-wvg5",
+   "title": "n8n: Stored XSS in Chat Trigger Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-43v7-fp2v-68f6",
+   "title": "n8n's Source Control SSH Configuration Uses StrictHostKeyChecking=no",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.5.0",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-44v6-jhgm-p3m4",
+   "title": "n8n has a Python Task Runner Sandbox Escape Vulnerability",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-44v6-jhgm-p3m4",
+   "title": "n8n has a Python Task Runner Sandbox Escape Vulnerability",
+   "severity": "high",
+   "vulnerable_versions": ">=2.17.0 <2.17.4",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-44v6-jhgm-p3m4",
+   "title": "n8n has a Python Task Runner Sandbox Escape Vulnerability",
+   "severity": "high",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-49m9-pgww-9vq6",
+   "title": "n8n Vulnerable to Unauthenticated Denial of Service via MCP Client Registration",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-49m9-pgww-9vq6",
+   "title": "n8n Vulnerable to Unauthenticated Denial of Service via MCP Client Registration",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-49m9-pgww-9vq6",
+   "title": "n8n Vulnerable to Unauthenticated Denial of Service via MCP Client Registration",
+   "severity": "high",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-49mx-fj45-q3p6",
+   "title": "n8n's Unsafe Buffer Allocation Allows In-Process Memory Disclosure in Task Runner",
+   "severity": "high",
+   "vulnerable_versions": ">=1.65.0 <1.114.3",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-200",
+    "CWE-668"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-537j-gqpc-p7fq",
+   "title": "n8n Vulnerable to XSS via MCP OAuth client",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-87"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-537j-gqpc-p7fq",
+   "title": "n8n Vulnerable to XSS via MCP OAuth client",
+   "severity": "high",
+   "vulnerable_versions": ">=2.17.0 <2.17.4",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-87"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-537j-gqpc-p7fq",
+   "title": "n8n Vulnerable to XSS via MCP OAuth client",
+   "severity": "high",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-87"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-57g9-58c2-xjg3",
+   "title": "n8n Has an Arbitrary File Read via Git Node",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.43",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": [
+    "CWE-88"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-57g9-58c2-xjg3",
+   "title": "n8n Has an Arbitrary File Read via Git Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.20.7",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": [
+    "CWE-88"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-57g9-58c2-xjg3",
+   "title": "n8n Has an Arbitrary File Read via Git Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.21.0 <2.22.1",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": [
+    "CWE-88"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-58jc-rcg5-95f3",
+   "title": "n8n's Possible Stored XSS in \"Respond to Webhook\" Node May Execute Outside iframe Sandbox",
+   "severity": "high",
+   "vulnerable_versions": "<1.114.0",
+   "cvss": {
+    "score": 7.3
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-58qr-rcgv-642v",
+   "title": "n8n has Multiple Remote Code Execution Vulnerabilities in Merge Node AlaSQL SQL Mode",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-58qr-rcgv-642v",
+   "title": "n8n has Multiple Remote Code Execution Vulnerabilities in Merge Node AlaSQL SQL Mode",
+   "severity": "critical",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-58qr-rcgv-642v",
+   "title": "n8n has Multiple Remote Code Execution Vulnerabilities in Merge Node AlaSQL SQL Mode",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5m98-cgcr-xx3q",
+   "title": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-347"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5m98-cgcr-xx3q",
+   "title": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-347"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5m98-cgcr-xx3q",
+   "title": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-347"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5vj6-wjr7-5v9f",
+   "title": "n8n allows open redirects via the /signin endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": "<=1.97.0",
+   "cvss": {
+    "score": 4.6
+   },
+   "cwe": [
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xp3-2w67-427v",
+   "title": "n8n: Git Node Clone and Push Operations Bypass File Sandbox",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.48",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xp3-2w67-427v",
+   "title": "n8n: Git Node Clone and Push Operations Bypass File Sandbox",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.21.8",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xp3-2w67-427v",
+   "title": "n8n: Git Node Clone and Push Operations Bypass File Sandbox",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.22.0 <2.22.4",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xrp-6693-jjx9",
+   "title": "n8n Unsafe Workflow Expression Evaluation Allows Remote Code Execution",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.17",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xrp-6693-jjx9",
+   "title": "n8n Unsafe Workflow Expression Evaluation Allows Remote Code Execution",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.4.5",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-5xrp-6693-jjx9",
+   "title": "n8n Unsafe Workflow Expression Evaluation Allows Remote Code Execution",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.5.0 <2.5.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-62r4-hw23-cc8v",
+   "title": "n8n Vulnerable to Arbitrary Command Execution in Pyodide based Python Code Node ",
+   "severity": "critical",
+   "vulnerable_versions": ">=1.0.0 <2.0.0",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-64xh-79j6-r5v8",
+   "title": "n8n: Bypass \"Allowed HTTP Request Domains\" Credential Restriction in Multiple AI and LLM Nodes",
+   "severity": "high",
+   "vulnerable_versions": "<2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-64xh-79j6-r5v8",
+   "title": "n8n: Bypass \"Allowed HTTP Request Domains\" Credential Restriction in Multiple AI and LLM Nodes",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-652q-gvq3-74qv",
+   "title": "n8n: Snowflake Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-652q-gvq3-74qv",
+   "title": "n8n: Snowflake Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-652q-gvq3-74qv",
+   "title": "n8n: Snowflake Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-65xw-2v52-jhxc",
+   "title": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-65xw-2v52-jhxc",
+   "title": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-65xw-2v52-jhxc",
+   "title": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-664h-gpgq-h6xx",
+   "title": "n8n: Wrong OAuth Scope on Evaluation Test Runs Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-664h-gpgq-h6xx",
+   "title": "n8n: Wrong OAuth Scope on Evaluation Test Runs Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-664h-gpgq-h6xx",
+   "title": "n8n: Wrong OAuth Scope on Evaluation Test Runs Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-679f-58pq-4v2c",
+   "title": "n8n: Prototype Pollution via Workflow Structure Summary Can Lead to Denial of Service",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-679f-58pq-4v2c",
+   "title": "n8n: Prototype Pollution via Workflow Structure Summary Can Lead to Denial of Service",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6cqr-8cfr-67f8",
+   "title": "n8n Has Expression Escape Vulnerability Leading to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.17",
+   "cvss": null,
+   "cwe": [
+    "CWE-913"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6cqr-8cfr-67f8",
+   "title": "n8n Has Expression Escape Vulnerability Leading to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.5.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-913"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6h4j-wcr9-2vg7",
+   "title": "n8n Has a Cross-user Authorization Bypass in Dynamic Credential OAuth Endpoints",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.43",
+   "cvss": {
+    "score": 8.1
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6h4j-wcr9-2vg7",
+   "title": "n8n Has a Cross-user Authorization Bypass in Dynamic Credential OAuth Endpoints",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.20.7",
+   "cvss": {
+    "score": 8.1
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6h4j-wcr9-2vg7",
+   "title": "n8n Has a Cross-user Authorization Bypass in Dynamic Credential OAuth Endpoints",
+   "severity": "high",
+   "vulnerable_versions": ">=2.21.0 <2.21.1",
+   "cvss": {
+    "score": 8.1
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6qc9-mqvw-jg7x",
+   "title": "n8n: Credential Authorization Bypass via Expression in HTTP Request Node `genericAuthType`",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6qc9-mqvw-jg7x",
+   "title": "n8n: Credential Authorization Bypass via Expression in HTTP Request Node `genericAuthType`",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6qc9-mqvw-jg7x",
+   "title": "n8n: Credential Authorization Bypass via Expression in HTTP Request Node `genericAuthType`",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6xcw-7xm6-48c6",
+   "title": "n8n: Expression Sandbox Escape via Shared Builtin Tampering and Code-Printer Injection Leads to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6xcw-7xm6-48c6",
+   "title": "n8n: Expression Sandbox Escape via Shared Builtin Tampering and Code-Printer Injection Leads to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-6xcw-7xm6-48c6",
+   "title": "n8n: Expression Sandbox Escape via Shared Builtin Tampering and Code-Printer Injection Leads to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-756q-gq9h-fp22",
+   "title": "n8n has Public API Variables IDOR that Allows Cross-Project Secret Disclosure",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-756q-gq9h-fp22",
+   "title": "n8n has Public API Variables IDOR that Allows Cross-Project Secret Disclosure",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-756q-gq9h-fp22",
+   "title": "n8n has Public API Variables IDOR that Allows Cross-Project Secret Disclosure",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75g8-rv7v-32f7",
+   "title": "n8n has Unauthenticated Expression Evaluation via Form Node",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-94",
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75g8-rv7v-32f7",
+   "title": "n8n has Unauthenticated Expression Evaluation via Form Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-94",
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75g8-rv7v-32f7",
+   "title": "n8n has Unauthenticated Expression Evaluation via Form Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-94",
+    "CWE-95"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75qm-gp28-rcq9",
+   "title": "n8n: Prototype Pollution via Workflow Credentials Leads to Unauthenticated User and Project Enumeration",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.61",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75qm-gp28-rcq9",
+   "title": "n8n: Prototype Pollution via Workflow Credentials Leads to Unauthenticated User and Project Enumeration",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-75qm-gp28-rcq9",
+   "title": "n8n: Prototype Pollution via Workflow Credentials Leads to Unauthenticated User and Project Enumeration",
+   "severity": "high",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-777w-rpr6-c52h",
+   "title": "n8n: Privilege Escalation and Code Execution via Full Public API Key Scope Assignment to Token Exchange JWTs",
+   "severity": "high",
+   "vulnerable_versions": "<2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-269"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-777w-rpr6-c52h",
+   "title": "n8n: Privilege Escalation and Code Execution via Full Public API Key Scope Assignment to Token Exchange JWTs",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-269"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-7c4h-vh2m-743m",
+   "title": "n8n Vulnerable to Command Injection in Community Package Installation",
+   "severity": "critical",
+   "vulnerable_versions": ">=0.187.0 <1.120.3",
+   "cvss": null,
+   "cwe": [
+    "CWE-20",
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-7hgx-277f-7vmg",
+   "title": "n8n: Agent Workflow Tool Bypasses Sub-Workflow Caller Policy",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-7hgx-277f-7vmg",
+   "title": "n8n: Agent Workflow Tool Bypasses Sub-Workflow Caller Policy",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-825q-w924-xhgx",
+   "title": "n8n's Improper CSP Enforcement in Webhook Responses May Allow Stored XSS",
+   "severity": "high",
+   "vulnerable_versions": "<1.122.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-825q-w924-xhgx",
+   "title": "n8n's Improper CSP Enforcement in Webhook Responses May Allow Stored XSS",
+   "severity": "high",
+   "vulnerable_versions": ">=1.123.0 <1.123.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-8342-988q-86cr",
+   "title": "n8n: Account Takeover via Unverified Email Claim in Token Exchange Embed Login",
+   "severity": "high",
+   "vulnerable_versions": "<2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-345",
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-8342-988q-86cr",
+   "title": "n8n: Account Takeover via Unverified Email Claim in Token Exchange Embed Login",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-345",
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-8398-gmmx-564h",
+   "title": "n8n has a Python sandbox escape",
+   "severity": "critical",
+   "vulnerable_versions": "<2.4.8",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-89gh-3pgc-v5h2",
+   "title": "n8n: Custom Header Credential Values Leaked in Plaintext into LLM Node Execution Data",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-532"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-89gh-3pgc-v5h2",
+   "title": "n8n: Custom Header Credential Values Leaked in Plaintext into LLM Node Execution Data",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-532"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-89gh-3pgc-v5h2",
+   "title": "n8n: Custom Header Credential Values Leaked in Plaintext into LLM Node Execution Data",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-532"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-97cp-mr4m-9mcf",
+   "title": "n8n Privilege Escalation vulnerability",
+   "severity": "high",
+   "vulnerable_versions": "<0.216.1",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": []
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-98c2-4cr3-4jc3",
+   "title": "n8n has SQL Injection in Data Table Node via orderByColumn Expression",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.26",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-98c2-4cr3-4jc3",
+   "title": "n8n has SQL Injection in Data Table Node via orderByColumn Expression",
+   "severity": "high",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-98c2-4cr3-4jc3",
+   "title": "n8n has SQL Injection in Data Table Node via orderByColumn Expression",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9c38-2mcm-q7f7",
+   "title": "n8n: Merge Node SQL Mode Prototype Pollution",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 6.3
+   },
+   "cwe": [
+    "CWE-488"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9c38-2mcm-q7f7",
+   "title": "n8n: Merge Node SQL Mode Prototype Pollution",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 6.3
+   },
+   "cwe": [
+    "CWE-488"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9cmh-xcqm-5hqr",
+   "title": "n8n: Cross-Tenant Module-Cache Poisoning in the JS Task Runner",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9cmh-xcqm-5hqr",
+   "title": "n8n: Cross-Tenant Module-Cache Poisoning in the JS Task Runner",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9cmh-xcqm-5hqr",
+   "title": "n8n: Cross-Tenant Module-Cache Poisoning in the JS Task Runner",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9g95-qf3f-ggrw",
+   "title": "n8n has OS Command Injection in Git Node",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.10",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9g95-qf3f-ggrw",
+   "title": "n8n has OS Command Injection in Git Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.5.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9pq8-m8gp-4p53",
+   "title": "n8n: Python sandbox escape",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.48",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9pq8-m8gp-4p53",
+   "title": "n8n: Python sandbox escape",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.21.8",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9pq8-m8gp-4p53",
+   "title": "n8n: Python sandbox escape",
+   "severity": "high",
+   "vulnerable_versions": ">=2.22.0 <2.22.4",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9r8p-h6cc-6qhm",
+   "title": "n8n: Google Service Account Private Key Exposed in JWT Header",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-312"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9r8p-h6cc-6qhm",
+   "title": "n8n: Google Service Account Private Key Exposed in JWT Header",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-312"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9r8p-h6cc-6qhm",
+   "title": "n8n: Google Service Account Private Key Exposed in JWT Header",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-312"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9w78-79q7-r4fp",
+   "title": "n8n: Authenticated SSRF via Dynamic Node Parameters Endpoints Allows Internal Network Access",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9w78-79q7-r4fp",
+   "title": "n8n: Authenticated SSRF via Dynamic Node Parameters Endpoints Allows Internal Network Access",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9w78-79q7-r4fp",
+   "title": "n8n: Authenticated SSRF via Dynamic Node Parameters Endpoints Allows Internal Network Access",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9wcp-9r3j-383q",
+   "title": "n8n: Stored DOM XSS via Resource Locator `cachedResultUrl`",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9wcp-9r3j-383q",
+   "title": "n8n: Stored DOM XSS via Resource Locator `cachedResultUrl`",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-9wcp-9r3j-383q",
+   "title": "n8n: Stored DOM XSS via Resource Locator `cachedResultUrl`",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c37g-w77q-m4vp",
+   "title": "n8n: SQL Injection in Postgres v1/TimesclaeDB Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c37g-w77q-m4vp",
+   "title": "n8n: SQL Injection in Postgres v1/TimesclaeDB Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c545-x2rh-82fc",
+   "title": "n8n: LDAP Email-Based Account Linking Allows Privilege Escalation and Account Takeover",
+   "severity": "high",
+   "vulnerable_versions": "<1.121.0",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c545-x2rh-82fc",
+   "title": "n8n: LDAP Email-Based Account Linking Allows Privilege Escalation and Account Takeover",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.4.0",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c8hm-hr8h-5xjw",
+   "title": "n8n Vulnerable to Stored XSS through Attachments View Endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.90.0",
+   "cvss": {
+    "score": 5
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c8xv-5998-g76h",
+   "title": "n8n: HTTP Request Node Pagination Prototype Pollution to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.43",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c8xv-5998-g76h",
+   "title": "n8n: HTTP Request Node Pagination Prototype Pollution to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.20.7",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-c8xv-5998-g76h",
+   "title": "n8n: HTTP Request Node Pagination Prototype Pollution to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.21.0 <2.22.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cj9h-qx8g-pq2g",
+   "title": "n8n: Shared-Workflow Editor Can Exfiltrate Credentials via Inline Sub-Workflow JSON",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cj9h-qx8g-pq2g",
+   "title": "n8n: Shared-Workflow Editor Can Exfiltrate Credentials via Inline Sub-Workflow JSON",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cj9h-qx8g-pq2g",
+   "title": "n8n: Shared-Workflow Editor Can Exfiltrate Credentials via Inline Sub-Workflow JSON",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cqr2-h44g-v75v",
+   "title": "n8n: Cross-Tenant Project-Member PII Disclosure via Missing Per-Project Scope Check on Role Assignment Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cqr2-h44g-v75v",
+   "title": "n8n: Cross-Tenant Project-Member PII Disclosure via Missing Per-Project Scope Check on Role Assignment Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cw9w-vv67-hf73",
+   "title": "n8n: Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-cw9w-vv67-hf73",
+   "title": "n8n: Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f2cp-m7mv-8jpv",
+   "title": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f2cp-m7mv-8jpv",
+   "title": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f2cp-m7mv-8jpv",
+   "title": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f3f2-mcxc-pwjx",
+   "title": "n8n: SQL Injection in MySQL, PostgreSQL, and Microsoft SQL nodes",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.4.0",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f6x8-65q6-j9m9",
+   "title": "n8n has Open Redirect in MCP OAuth Consent Flow",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 4.7
+   },
+   "cwe": [
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f6x8-65q6-j9m9",
+   "title": "n8n has Open Redirect in MCP OAuth Consent Flow",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 4.7
+   },
+   "cwe": [
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f6x8-65q6-j9m9",
+   "title": "n8n has Open Redirect in MCP OAuth Consent Flow",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 4.7
+   },
+   "cwe": [
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f77h-j2v7-g6mw",
+   "title": "n8n Vulnerable to Hijacking of Unauthenticated Chat Execution ",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f77h-j2v7-g6mw",
+   "title": "n8n Vulnerable to Hijacking of Unauthenticated Chat Execution ",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-f77h-j2v7-g6mw",
+   "title": "n8n Vulnerable to Hijacking of Unauthenticated Chat Execution ",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-fpg6-x68q-5793",
+   "title": "n8n: computer-use Shell Sandbox Not Enforced on Linux and Windows",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-fpg6-x68q-5793",
+   "title": "n8n: computer-use Shell Sandbox Not Enforced on Linux and Windows",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-fvfv-ppw4-7h2w",
+   "title": "n8n has a Guardrail Node Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.10.0",
+   "cvss": {
+    "score": 3.7
+   },
+   "cwe": [
+    "CWE-20",
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-fxcw-h3qj-8m8p",
+   "title": "n8n Has External Secrets Authorization Bypass in Credential Saving",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.23",
+   "cvss": {
+    "score": 6.3
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-fxcw-h3qj-8m8p",
+   "title": "n8n Has External Secrets Authorization Bypass in Credential Saving",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.6.4",
+   "cvss": {
+    "score": 6.3
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-g3r5-9h93-4j2c",
+   "title": "n8n: Race Condition in Git Clone Node Allows Authenticated Users to Achieve Remote Code Execution",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-367"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-g3r5-9h93-4j2c",
+   "title": "n8n: Race Condition in Git Clone Node Allows Authenticated Users to Achieve Remote Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-367"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-g3r5-9h93-4j2c",
+   "title": "n8n: Race Condition in Git Clone Node Allows Authenticated Users to Achieve Remote Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-367"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gf29-4f56-r2jf",
+   "title": "n8n: Git Node fetch/pull/pushTags Operations Bypass Sandbox Path Restriction",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gf29-4f56-r2jf",
+   "title": "n8n: Git Node fetch/pull/pushTags Operations Bypass Sandbox Path Restriction",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gf29-4f56-r2jf",
+   "title": "n8n: Git Node fetch/pull/pushTags Operations Bypass Sandbox Path Restriction",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gfvg-qv54-r4pc",
+   "title": "n8n's Improper File Access Controls Allow Arbitrary File Read by Authenticated Users",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.18",
+   "cvss": null,
+   "cwe": [
+    "CWE-367"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gfvg-qv54-r4pc",
+   "title": "n8n's Improper File Access Controls Allow Arbitrary File Read by Authenticated Users",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.5.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-367"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-ggjm-f3g4-rwmm",
+   "title": "n8n symlink traversal vulnerability in \"Read/Write File\" node allows access to restricted files",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.106.0",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-59",
+    "CWE-61"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gq57-v332-7666",
+   "title": "n8n is vulnerable to Improper Authorization through its `/stop` endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.99.1",
+   "cvss": {
+    "score": 4.3
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gq66-9cw5-j5jm",
+   "title": "n8n: GraphQL Node Bypasses \"Allowed HTTP Request Domains\" Restriction",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gq66-9cw5-j5jm",
+   "title": "n8n: GraphQL Node Bypasses \"Allowed HTTP Request Domains\" Restriction",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gq66-9cw5-j5jm",
+   "title": "n8n: GraphQL Node Bypasses \"Allowed HTTP Request Domains\" Restriction",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gv7g-jm28-cr3m",
+   "title": "n8n: Expression sandbox escape via arrow-function bodies enabling command execution",
+   "severity": "high",
+   "vulnerable_versions": "<2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-gv7g-jm28-cr3m",
+   "title": "n8n: Expression sandbox escape via arrow-function bodies enabling command execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-h3jj-5f3v-3685",
+   "title": "n8n: Public API Execution Retry Authorization Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 6.4
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-h3jj-5f3v-3685",
+   "title": "n8n: Public API Execution Retry Authorization Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 6.4
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-h44j-f5r5-ph73",
+   "title": "n8n: \"Allowed HTTP Request Domains\" Restriction Bypass via AI Agents MCP Connector",
+   "severity": "high",
+   "vulnerable_versions": "<2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-h44j-f5r5-ph73",
+   "title": "n8n: \"Allowed HTTP Request Domains\" Restriction Bypass via AI Agents MCP Connector",
+   "severity": "high",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-h86q-fx34-gfjr",
+   "title": "n8n: Reflected XSS via Facebook, WhatsApp, and Microsoft Teams Trigger Webhook Verification Endpoints",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.24.0",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hfmv-hhh3-43f2",
+   "title": "Stored XSS in n8n Form Trigger allows Account Takeover via injected iframe and video/source",
+   "severity": "high",
+   "vulnerable_versions": ">=1.77.0 <1.98.2",
+   "cvss": {
+    "score": 8.7
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hh89-3r9w-qj3j",
+   "title": "n8n: Unauthenticated Persistent Storage Exhaustion via OAuth Dynamic Client Registration Endpoint",
+   "severity": "high",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hh89-3r9w-qj3j",
+   "title": "n8n: Unauthenticated Persistent Storage Exhaustion via OAuth Dynamic Client Registration Endpoint",
+   "severity": "high",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hp3c-vfpm-q4f7",
+   "title": "n8n has SQL Injection in Snowflake and MySQL Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hp3c-vfpm-q4f7",
+   "title": "n8n has SQL Injection in Snowflake and MySQL Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hp3c-vfpm-q4f7",
+   "title": "n8n has SQL Injection in Snowflake and MySQL Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 8.2
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hqr4-h3xv-9m3r",
+   "title": "n8n has XML Node Prototype Pollution that to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hqr4-h3xv-9m3r",
+   "title": "n8n has XML Node Prototype Pollution that to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.17.0 <2.17.4",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hqr4-h3xv-9m3r",
+   "title": "n8n has XML Node Prototype Pollution that to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hv53-3329-vmrm",
+   "title": "n8n Merge Node has Arbitrary File Write leading to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.118.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-434",
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hv53-3329-vmrm",
+   "title": "n8n Merge Node has Arbitrary File Write leading to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.4.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-434",
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hv7x-3x78-gx53",
+   "title": "n8n: Wrong OAuth Scope On Evaluations Test Run Creation Endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 7.4
+   },
+   "cwe": [
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hv7x-3x78-gx53",
+   "title": "n8n: Wrong OAuth Scope On Evaluations Test Run Creation Endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 7.4
+   },
+   "cwe": [
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hv7x-3x78-gx53",
+   "title": "n8n: Wrong OAuth Scope On Evaluations Test Run Creation Endpoint",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 7.4
+   },
+   "cwe": [
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hw8v-xxg5-vvvx",
+   "title": "n8n: Expression Sandbox Escape via Class-Field Sanitizer Rebinding Can Lead to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hw8v-xxg5-vvvx",
+   "title": "n8n: Expression Sandbox Escape via Class-Field Sanitizer Rebinding Can Lead to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hw8v-xxg5-vvvx",
+   "title": "n8n: Expression Sandbox Escape via Class-Field Sanitizer Rebinding Can Lead to Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hwmj-qg4v-cvg9",
+   "title": "n8n: MySQL v1 Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.61",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hwmj-qg4v-cvg9",
+   "title": "n8n: MySQL v1 Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hwmj-qg4v-cvg9",
+   "title": "n8n: MySQL v1 Node executeQuery Operation Allows SQL Injection via Unparameterized Expression Interpolation",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hx4h-vr3m-45vh",
+   "title": "n8n: Prototype Pollution via VM Expression Engine Sandbox Escape Leads to Denial of Service",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hx4h-vr3m-45vh",
+   "title": "n8n: Prototype Pollution via VM Expression Engine Sandbox Escape Leads to Denial of Service",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-hx4h-vr3m-45vh",
+   "title": "n8n: Prototype Pollution via VM Expression Engine Sandbox Escape Leads to Denial of Service",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-j4p8-h8mh-rh8q",
+   "title": "Self-hosted n8n has Legacy Code node that enables arbitrary file read/write",
+   "severity": "high",
+   "vulnerable_versions": ">=1.2.1 <2.0.0",
+   "cvss": {
+    "score": 7.1
+   },
+   "cwe": [
+    "CWE-269",
+    "CWE-749"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-j535-v25q-vx3q",
+   "title": "n8n: Regular Expression Denial of Service in the Default Blocked-File-Pattern Match via a Git Node Clone Path",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-1333"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-j535-v25q-vx3q",
+   "title": "n8n: Regular Expression Denial of Service in the Default Blocked-File-Pattern Match via a Git Node Clone Path",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-1333"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-j535-v25q-vx3q",
+   "title": "n8n: Regular Expression Denial of Service in the Default Blocked-File-Pattern Match via a Git Node Clone Path",
+   "severity": "high",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-1333"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jf52-3f2h-h9j5",
+   "title": "n8n's Missing Stripe-Signature Verification Allows Unauthenticated Forged Webhooks",
+   "severity": "moderate",
+   "vulnerable_versions": ">=0.150.0 <2.2.2",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jh8h-6c9q-7gmw",
+   "title": "n8n has an Authentication Bypass in its Chat Trigger Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jh8h-6c9q-7gmw",
+   "title": "n8n has an Authentication Bypass in its Chat Trigger Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jh8h-6c9q-7gmw",
+   "title": "n8n has an Authentication Bypass in its Chat Trigger Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jjpj-p2wh-qf23",
+   "title": "n8n has a Sandbox Escape in its JavaScript Task Runner",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jjpj-p2wh-qf23",
+   "title": "n8n has a Sandbox Escape in its JavaScript Task Runner",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jjpj-p2wh-qf23",
+   "title": "n8n has a Sandbox Escape in its JavaScript Task Runner",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jp7m-xcgx-57qm",
+   "title": "n8n: External Secrets Permission Bypass via Expression Parser Mismatch",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.61",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jp7m-xcgx-57qm",
+   "title": "n8n: External Secrets Permission Bypass via Expression Parser Mismatch",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jp7m-xcgx-57qm",
+   "title": "n8n: External Secrets Permission Bypass via Expression Parser Mismatch",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jpq7-226w-6cxx",
+   "title": "n8n: NoSQL Injection in MongoDB Node Find And Replace Operation",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.24.0",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jqpw-qww5-cj4c",
+   "title": "n8n: Denial of Service via ZIP decompression in webhook workflow",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.24.0",
+   "cvss": {
+    "score": 5.9
+   },
+   "cwe": [
+    "CWE-409"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jqwr-vx3p-r266",
+   "title": "n8n: PostgresTrigger Node SQL Injection Allows Authenticated Users to Execute Arbitrary SQL on Connected PostgreSQL Instances",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jqwr-vx3p-r266",
+   "title": "n8n: PostgresTrigger Node SQL Injection Allows Authenticated Users to Execute Arbitrary SQL on Connected PostgreSQL Instances",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jqwr-vx3p-r266",
+   "title": "n8n: PostgresTrigger Node SQL Injection Allows Authenticated Users to Execute Arbitrary SQL on Connected PostgreSQL Instances",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jvc7-762p-3743",
+   "title": "n8n: Missing Token Validation on Microsoft Agent 365 Trigger and Stripe Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 7.2
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jvc7-762p-3743",
+   "title": "n8n: Missing Token Validation on Microsoft Agent 365 Trigger and Stripe Nodes",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 7.2
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jwm3-qcfw-c5pp",
+   "title": "n8n: Python Code Node AST Validator Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 5
+   },
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-jwm3-qcfw-c5pp",
+   "title": "n8n: Python Code Node AST Validator Bypass",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 5
+   },
+   "cwe": [
+    "CWE-693"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-m63j-689w-3j35",
+   "title": "n8n is Vulnerable to Credential Theft via Name-Based Resolution and Permission Checker Bypass in Community Edition",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-m63j-689w-3j35",
+   "title": "n8n is Vulnerable to Credential Theft via Name-Based Resolution and Permission Checker Bypass in Community Edition",
+   "severity": "high",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-m63j-689w-3j35",
+   "title": "n8n is Vulnerable to Credential Theft via Name-Based Resolution and Permission Checker Bypass in Community Edition",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-639"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-m82q-59gv-mcr9",
+   "title": "n8n Vulnerable to Arbitrary File Write on Remote Systems via SSH Node",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.12",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-m82q-59gv-mcr9",
+   "title": "n8n Vulnerable to Arbitrary File Write on Remote Systems via SSH Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.4.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mhrx-qhrj-673w",
+   "title": "n8n Has a Source Control Pull SQL Injection",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.43",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mhrx-qhrj-673w",
+   "title": "n8n Has a Source Control Pull SQL Injection",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.20.7",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mhrx-qhrj-673w",
+   "title": "n8n Has a Source Control Pull SQL Injection",
+   "severity": "high",
+   "vulnerable_versions": ">=2.21.0 <2.21.1",
+   "cvss": {
+    "score": 9
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mmgg-m5j7-f83h",
+   "title": "n8n has Arbitrary File Read via Python Code Node Sandbox Escape",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-497"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mmgg-m5j7-f83h",
+   "title": "n8n has Arbitrary File Read via Python Code Node Sandbox Escape",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-497"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mmgg-m5j7-f83h",
+   "title": "n8n has Arbitrary File Read via Python Code Node Sandbox Escape",
+   "severity": "high",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-497"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mp4j-h6gh-f6mp",
+   "title": "n8n has SQL Injection in SeaTable Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 6.8
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mp4j-h6gh-f6mp",
+   "title": "n8n has SQL Injection in SeaTable Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 6.8
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mp4j-h6gh-f6mp",
+   "title": "n8n has SQL Injection in SeaTable Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 6.8
+   },
+   "cwe": [
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mq3m-f8x3-579w",
+   "title": "n8n: Cross-Issuer Token Exchange Account Binding via Subject-Only Identity Resolution",
+   "severity": "high",
+   "vulnerable_versions": "<2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-287",
+    "CWE-346"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mq3m-f8x3-579w",
+   "title": "n8n: Cross-Issuer Token Exchange Account Binding via Subject-Only Identity Resolution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-287",
+    "CWE-346"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mqpr-49jj-32rc",
+   "title": "n8n: Webhook Forgery on Github Webhook Trigger",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.15",
+   "cvss": {
+    "score": 4
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mqpr-49jj-32rc",
+   "title": "n8n: Webhook Forgery on Github Webhook Trigger",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.5.0",
+   "cvss": {
+    "score": 4
+   },
+   "cwe": [
+    "CWE-290"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mvh4-2cm2-6hpg",
+   "title": "Stored XSS in n8n LangChain Chat Trigger Node via initialMessages Parameter",
+   "severity": "moderate",
+   "vulnerable_versions": ">=1.24.0 <1.107.0",
+   "cvss": {
+    "score": 4.1
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mxrg-77hm-89hv",
+   "title": "n8n: Prototype Pollution in XML and GSuiteAdmin node parameters lead to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mxrg-77hm-89hv",
+   "title": "n8n: Prototype Pollution in XML and GSuiteAdmin node parameters lead to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-mxrg-77hm-89hv",
+   "title": "n8n: Prototype Pollution in XML and GSuiteAdmin node parameters lead to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-p3rg-hrf9-w9gj",
+   "title": "n8n: DOM-Based XSS via Unsandboxed iframe srcdoc in HTML Preview",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-p3rg-hrf9-w9gj",
+   "title": "n8n: DOM-Based XSS via Unsandboxed iframe srcdoc in HTML Preview",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-p3rg-hrf9-w9gj",
+   "title": "n8n: DOM-Based XSS via Unsandboxed iframe srcdoc in HTML Preview",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-p58x-7733-vp9m",
+   "title": "n8n Directory Traversal vulnerability",
+   "severity": "moderate",
+   "vulnerable_versions": "<0.216.1",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pf2q-pxhf-hgmw",
+   "title": "n8n: Path-Confinement Bypass in computer-use search_files Allows Reading Files Outside the Base Directory",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pf2q-pxhf-hgmw",
+   "title": "n8n: Path-Confinement Bypass in computer-use search_files Allows Reading Files Outside the Base Directory",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-22"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pf83-w3f9-8m37",
+   "title": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-288"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pf83-w3f9-8m37",
+   "title": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-288"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pf83-w3f9-8m37",
+   "title": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-288"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pm35-fqvh-cq5g",
+   "title": "n8n: Legacy Expression Evaluator Sanitizer Bypass Leads to Authenticated Code Execution",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.64",
+   "cvss": null,
+   "cwe": [
+    "CWE-917"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pm35-fqvh-cq5g",
+   "title": "n8n: Legacy Expression Evaluator Sanitizer Bypass Leads to Authenticated Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-917"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pm35-fqvh-cq5g",
+   "title": "n8n: Legacy Expression Evaluator Sanitizer Bypass Leads to Authenticated Code Execution",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-917"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pmqw-72cg-wx85",
+   "title": "n8n: Credential Exfiltration via Permission Bypass",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 9.6
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pmqw-72cg-wx85",
+   "title": "n8n: Credential Exfiltration via Permission Bypass",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 9.6
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pmqw-72cg-wx85",
+   "title": "n8n: Credential Exfiltration via Permission Bypass",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 9.6
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pq6c-vh67-xpm3",
+   "title": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pq6c-vh67-xpm3",
+   "title": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pq6c-vh67-xpm3",
+   "title": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-pr9r-gxgp-9rm8",
+   "title": "n8n Vulnerable to Denial of Service via Malformed Binary Data Requests",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.99.0",
+   "cvss": {
+    "score": 4.9
+   },
+   "cwe": [
+    "CWE-400"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q3j5-8vrg-4p9q",
+   "title": "n8n: Shared Credential Header Leak via HTTP Request Pagination Expression",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.61",
+   "cvss": null,
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q3j5-8vrg-4p9q",
+   "title": "n8n: Shared Credential Header Leak via HTTP Request Pagination Expression",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.27.4",
+   "cvss": null,
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q3j5-8vrg-4p9q",
+   "title": "n8n: Shared Credential Header Leak via HTTP Request Pagination Expression",
+   "severity": "high",
+   "vulnerable_versions": ">=2.28.0 <2.28.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q4fm-pjq6-m63g",
+   "title": "n8n has a Stored XSS Vulnerability in its Form Trigger",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.25",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q4fm-pjq6-m63g",
+   "title": "n8n has a Stored XSS Vulnerability in its Form Trigger",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.11.2",
+   "cvss": {
+    "score": 5.4
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5f4-99jv-pgg5",
+   "title": "n8n has Prototype Pollution in XML Webhook Body Parser that Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5f4-99jv-pgg5",
+   "title": "n8n has Prototype Pollution in XML Webhook Body Parser that Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.17.0 <2.17.4",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5f4-99jv-pgg5",
+   "title": "n8n has Prototype Pollution in XML Webhook Body Parser that Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5wm-mgqx-fv2f",
+   "title": "n8n: Instance AI Credential Setup Accepts Unvalidated Probe URL from Fetched Content",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5wm-mgqx-fv2f",
+   "title": "n8n: Instance AI Credential Setup Accepts Unvalidated Probe URL from Fetched Content",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5xf-xhwf-cwqf",
+   "title": "n8n: Member-Level Users Can Execute Other Users' MCP Server Trigger Workflows via Missing OAuth Authorization Check",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-q5xf-xhwf-cwqf",
+   "title": "n8n: Member-Level Users Can Execute Other Users' MCP Server Trigger Workflows via Missing OAuth Authorization Check",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qfc3-hm4j-7q77",
+   "title": "n8n Vulnerable to XSS via Binary Data Inline HTML Rendering",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 8.9
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qfc3-hm4j-7q77",
+   "title": "n8n Vulnerable to XSS via Binary Data Inline HTML Rendering",
+   "severity": "moderate",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 8.9
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qfc3-hm4j-7q77",
+   "title": "n8n Vulnerable to XSS via Binary Data Inline HTML Rendering",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 8.9
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qgpw-8g46-w95v",
+   "title": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.76",
+   "cvss": null,
+   "cwe": [
+    "CWE-22",
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qgpw-8g46-w95v",
+   "title": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.37.7",
+   "cvss": null,
+   "cwe": [
+    "CWE-22",
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qgpw-8g46-w95v",
+   "title": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.38.0 <2.38.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-22",
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qpq4-pw7f-pp8w",
+   "title": "n8n Has Stored Cross-site Scripting via Markdown Rendering in Workflow UI",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.9",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qpq4-pw7f-pp8w",
+   "title": "n8n Has Stored Cross-site Scripting via Markdown Rendering in Workflow UI",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0 <2.2.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qrx8-25qr-5r7v",
+   "title": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
+   "severity": "high",
+   "vulnerable_versions": "<2.25.7",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-306"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-qrx8-25qr-5r7v",
+   "title": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-306"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r4v6-9fqc-w5jr",
+   "title": "n8n's Credential Authorization Bypass in dynamic-node-parameters Allows Foreign API Key Replay",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.33",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r4v6-9fqc-w5jr",
+   "title": "n8n's Credential Authorization Bypass in dynamic-node-parameters Allows Foreign API Key Replay",
+   "severity": "high",
+   "vulnerable_versions": ">=2.17.0 <2.17.5",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-862"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r6jc-mpqw-m755",
+   "title": "n8n has SQL Injection in Oracle Database Node via Limit Field",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.32",
+   "cvss": {
+    "score": 9.8
+   },
+   "cwe": [
+    "CWE-20",
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r6jc-mpqw-m755",
+   "title": "n8n has SQL Injection in Oracle Database Node via Limit Field",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.17.4",
+   "cvss": {
+    "score": 9.8
+   },
+   "cwe": [
+    "CWE-20",
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r6jc-mpqw-m755",
+   "title": "n8n has SQL Injection in Oracle Database Node via Limit Field",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.18.0 <2.18.1",
+   "cvss": {
+    "score": 9.8
+   },
+   "cwe": [
+    "CWE-20",
+    "CWE-89"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-r9xw-p7wj-w792",
+   "title": "n8n Information Disclosure vulnerability",
+   "severity": "high",
+   "vulnerable_versions": "<0.216.1",
+   "cvss": {
+    "score": 7.5
+   },
+   "cwe": [
+    "CWE-668"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rcv6-pvrj-4xcg",
+   "title": "n8n: Authenticated code execution in the n8n Git node",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rcv6-pvrj-4xcg",
+   "title": "n8n: Authenticated code execution in the n8n Git node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rcv6-pvrj-4xcg",
+   "title": "n8n: Authenticated code execution in the n8n Git node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-78"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rm2v-h48j-895m",
+   "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rm2v-h48j-895m",
+   "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-rm2v-h48j-895m",
+   "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.1",
+   "cvss": {
+    "score": 7.7
+   },
+   "cwe": [
+    "CWE-200"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v364-rw7m-3263",
+   "title": "n8n Vulnerable to RCE via Arbitrary File Write",
+   "severity": "critical",
+   "vulnerable_versions": ">=0.123.0 <1.121.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-434"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v4pr-fm98-w9pg",
+   "title": "n8n Vulnerable to Unauthenticated File Access via Improper Webhook Request Handling",
+   "severity": "critical",
+   "vulnerable_versions": ">=1.65.0 <1.121.0",
+   "cvss": {
+    "score": 10
+   },
+   "cwe": [
+    "CWE-20"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v733-mwr6-fgcm",
+   "title": "n8n: Same-Origin XSS in Respond to Webhook Node",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.55",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v733-mwr6-fgcm",
+   "title": "n8n: Same-Origin XSS in Respond to Webhook Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.25.7",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v733-mwr6-fgcm",
+   "title": "n8n: Same-Origin XSS in Respond to Webhook Node",
+   "severity": "high",
+   "vulnerable_versions": ">=2.26.0 <2.26.2",
+   "cvss": {
+    "score": 7.6
+   },
+   "cwe": [
+    "CWE-79"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v98v-ff95-f3cp",
+   "title": "n8n Vulnerable to Remote Code Execution via Expression Injection",
+   "severity": "critical",
+   "vulnerable_versions": ">=0.211.0 <1.120.4",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-913"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-v98v-ff95-f3cp",
+   "title": "n8n Vulnerable to Remote Code Execution via Expression Injection",
+   "severity": "critical",
+   "vulnerable_versions": ">=1.121.0 <1.121.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-913"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vhf8-cg2h-cg3p",
+   "title": "n8n: SSRF Protection Bypass via MCP Client Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vhf8-cg2h-cg3p",
+   "title": "n8n: SSRF Protection Bypass via MCP Client Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-918"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vjf3-2gpj-233v",
+   "title": "n8n has an SSO Enforcement Bypass in its Self-Service Settings API",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.8.0",
+   "cvss": {
+    "score": 6.3
+   },
+   "cwe": [
+    "CWE-269",
+    "CWE-284",
+    "CWE-287"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vpcf-gvg4-6qwr",
+   "title": "n8n: Expression Sandbox Escape Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vpcf-gvg4-6qwr",
+   "title": "n8n: Expression Sandbox Escape Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vpcf-gvg4-6qwr",
+   "title": "n8n: Expression Sandbox Escape Leads to RCE",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-vpgc-2f6g-7w7x",
+   "title": "n8n Has Authorization Bypass in OAuth Callback via N8N_SKIP_AUTH_ON_OAUTH_CALLBACK",
+   "severity": "moderate",
+   "vulnerable_versions": "<2.8.0",
+   "cvss": {
+    "score": 4.7
+   },
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w673-8fjw-457c",
+   "title": "n8n: Authenticated XSS and Open Redirect via Form Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.24",
+   "cvss": {
+    "score": 4.1
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w673-8fjw-457c",
+   "title": "n8n: Authenticated XSS and Open Redirect via Form Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.10.4",
+   "cvss": {
+    "score": 4.1
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w673-8fjw-457c",
+   "title": "n8n: Authenticated XSS and Open Redirect via Form Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.11.0 <2.12.0",
+   "cvss": {
+    "score": 4.1
+   },
+   "cwe": [
+    "CWE-79",
+    "CWE-601"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w83q-mcmx-mh42",
+   "title": "n8n Vulnerable to LDAP Filter Injection in LDAP Node",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.27",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-90"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w83q-mcmx-mh42",
+   "title": "n8n Vulnerable to LDAP Filter Injection in LDAP Node",
+   "severity": "moderate",
+   "vulnerable_versions": "=2.14.0",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-90"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w83q-mcmx-mh42",
+   "title": "n8n Vulnerable to LDAP Filter Injection in LDAP Node",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.13.3",
+   "cvss": {
+    "score": 4.8
+   },
+   "cwe": [
+    "CWE-90"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w867-jm58-p9pv",
+   "title": "n8n: Authenticated Users Can Exhaust Temporary Disk Storage via Data-Table File Uploads",
+   "severity": "moderate",
+   "vulnerable_versions": "<1.123.58",
+   "cvss": null,
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w867-jm58-p9pv",
+   "title": "n8n: Authenticated Users Can Exhaust Temporary Disk Storage via Data-Table File Uploads",
+   "severity": "moderate",
+   "vulnerable_versions": ">=2.0.0 <2.28.0",
+   "cvss": null,
+   "cwe": [
+    "CWE-770"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-w96v-gf22-crwp",
+   "title": "n8n: Webhook Node IP Whitelist Bypass via Partial String Matching",
+   "severity": "moderate",
+   "vulnerable_versions": ">=1.36.0 <2.2.0",
+   "cvss": {
+    "score": 5.3
+   },
+   "cwe": [
+    "CWE-134",
+    "CWE-183",
+    "CWE-284"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wpqc-h9wp-chmq",
+   "title": "n8n vulnerable to Remote Code Execution via Git Node Custom Pre-Commit Hook",
+   "severity": "critical",
+   "vulnerable_versions": ">=0.123.1 <1.119.2",
+   "cvss": null,
+   "cwe": [
+    "CWE-829"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wrwr-h859-xh2r",
+   "title": "n8n Has an XML Node Prototype Pollution Patch Bypass",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.43",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wrwr-h859-xh2r",
+   "title": "n8n Has an XML Node Prototype Pollution Patch Bypass",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.20.7",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wrwr-h859-xh2r",
+   "title": "n8n Has an XML Node Prototype Pollution Patch Bypass",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.21.0 <2.22.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wxx7-mcgf-j869",
+   "title": "n8n has Potential Remote Code Execution via Merge Node",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wxx7-mcgf-j869",
+   "title": "n8n has Potential Remote Code Execution via Merge Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.9.3",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-wxx7-mcgf-j869",
+   "title": "n8n has Potential Remote Code Execution via Merge Node",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 9.9
+   },
+   "cwe": [
+    "CWE-89",
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-x2mw-7j39-93xq",
+   "title": "n8n has Arbitrary Command Execution via File Write and Git Operations",
+   "severity": "critical",
+   "vulnerable_versions": "<1.123.8",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-x2mw-7j39-93xq",
+   "title": "n8n has Arbitrary Command Execution via File Write and Git Operations",
+   "severity": "critical",
+   "vulnerable_versions": ">=2.0.0 <2.2.0",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-94"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-x5vx-c2c8-m3w9",
+   "title": "n8n: AI Agents Project Viewer Privilege Escalation via run_node_tool",
+   "severity": "high",
+   "vulnerable_versions": "<2.29.8",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-x5vx-c2c8-m3w9",
+   "title": "n8n: AI Agents Project Viewer Privilege Escalation via run_node_tool",
+   "severity": "high",
+   "vulnerable_versions": ">=2.30.0 <2.30.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-863"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-x6p3-m6h9-fx7r",
+   "title": "n8n: Microsoft SQL Node Prototype Pollution",
+   "severity": "high",
+   "vulnerable_versions": "<2.24.0",
+   "cvss": {
+    "score": 8.5
+   },
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xgp7-7qjq-vg47",
+   "title": "n8n Vulnerable to Remote Code Execution via Git Node Pre-Commit Hook",
+   "severity": "high",
+   "vulnerable_versions": "<1.113.0",
+   "cvss": {
+    "score": 8.8
+   },
+   "cwe": [
+    "CWE-829"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xmc9-4f2h-jf9c",
+   "title": "n8n: Edit Image Node Format Injection Allows Arbitrary File Write",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xmc9-4f2h-jf9c",
+   "title": "n8n: Edit Image Node Format Injection Allows Arbitrary File Write",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xmc9-4f2h-jf9c",
+   "title": "n8n: Edit Image Node Format Injection Allows Arbitrary File Write",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-73"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xvh5-5qg4-x9qp",
+   "title": "n8n has In-Process Memory Disclosure in its Task Runner",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.22",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-908"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xvh5-5qg4-x9qp",
+   "title": "n8n has In-Process Memory Disclosure in its Task Runner",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.9.3",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-908"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xvh5-5qg4-x9qp",
+   "title": "n8n has In-Process Memory Disclosure in its Task Runner",
+   "severity": "high",
+   "vulnerable_versions": ">=2.10.0 <2.10.1",
+   "cvss": {
+    "score": 6.5
+   },
+   "cwe": [
+    "CWE-908"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xwx6-jjhv-84p8",
+   "title": "n8n: Prototype Pollution via Dot-Notation Field Names Leads To Instance-Wide Denial of Service",
+   "severity": "high",
+   "vulnerable_versions": "<1.123.67",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xwx6-jjhv-84p8",
+   "title": "n8n: Prototype Pollution via Dot-Notation Field Names Leads To Instance-Wide Denial of Service",
+   "severity": "high",
+   "vulnerable_versions": ">=2.0.0-rc.0 <2.31.5",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  },
+  {
+   "url": "https://github.com/advisories/GHSA-xwx6-jjhv-84p8",
+   "title": "n8n: Prototype Pollution via Dot-Notation Field Names Leads To Instance-Wide Denial of Service",
+   "severity": "high",
+   "vulnerable_versions": ">=2.32.0 <2.32.1",
+   "cvss": null,
+   "cwe": [
+    "CWE-1321"
+   ]
+  }
+ ]
+}

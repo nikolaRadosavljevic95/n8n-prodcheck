@@ -1,0 +1,39 @@
+{
+  "name": "n8n-prodcheck",
+  "version": "0.1.0",
+  "description": "Static production and security check for exported n8n workflows",
+  "type": "module",
+  "license": "MIT",
+  "author": "Nikola Radosavljević",
+  "bin": {
+    "n8n-prodcheck": "bin/prodcheck.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "data/",
+    "scripts/",
+    "instance-check.sh",
+    "RULES.md",
+    "INSTANCE-CHECK.md"
+  ],
+  "scripts": {
+    "test": "node test/run.mjs",
+    "advisories": "node scripts/update-advisories.mjs",
+    "samples": "node scripts/build-samples.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "audit",
+    "security",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikolaRadosavljevic95/n8n-prodcheck.git"
+  }
+}
