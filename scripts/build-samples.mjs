@@ -55,11 +55,18 @@ const advisoryData = loadAdvisories();
 const date = (advisoryData.generatedAt || new Date().toISOString()).slice(0, 10);
 const ignore = JSON.parse(fs.readFileSync(rel('fixtures/portfolio/.prodcheck-ignore.json'), 'utf8')).ignore;
 
-const portfolio = runCheck({ targets: [rel('fixtures/portfolio')], n8nVersion: '2.40.5', ignore, advisoryData });
+// The portfolio before its RFQ endpoints got authentication (fixed in n8n-portfolio PR #5).
+const beforeFiles = fs.readdirSync(rel('fixtures/portfolio-before-fix')).filter((f) => f.endsWith('.json'));
+const beforeTargets = fs.readdirSync(rel('fixtures/portfolio'))
+  .filter((f) => f.endsWith('.json') && !beforeFiles.includes(f))
+  .map((f) => rel(`fixtures/portfolio/${f}`))
+  .concat(beforeFiles.map((f) => rel(`fixtures/portfolio-before-fix/${f}`)));
+const portfolio = runCheck({ targets: beforeTargets, n8nVersion: '2.40.5', ignore, advisoryData });
+const after = runCheck({ targets: [rel('fixtures/portfolio')], n8nVersion: '2.40.5', ignore, advisoryData });
 fs.writeFileSync(rel('examples/sample-report-portfolio.md'), renderMarkdown(portfolio, {
   base: rel('fixtures'),
   title: 'Sample report: the author\'s own portfolio',
-  subject: '[n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio), 16 workflows, run with the reviewed ignore list in fixtures/portfolio/.prodcheck-ignore.json',
+  subject: `[n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio), 16 workflows, as they were on 2026-09-24, with the reviewed exceptions in fixtures/portfolio/.prodcheck-ignore.json. The four findings below were fixed in [n8n-portfolio#5](https://github.com/nikolaRadosavljevic95/n8n-portfolio/pull/5); the same check on the fixed workflows reports ${after.findings.length} findings.`,
   date,
 }));
 

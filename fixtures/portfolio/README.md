@@ -2,5 +2,6 @@ Copies of the 16 workflows from [n8n-portfolio](https://github.com/nikolaRadosav
 (same author, MIT), used as a realistic, known set in the tests.
 
 `.prodcheck-ignore.json` records the findings that were reviewed and accepted, each with
-the reason. What remains after the ignore list is asserted exactly in `test/run.mjs`, so a
-rule change that adds or drops a finding on these workflows shows up as a failing test.
+the reason. After the ignore list these workflows must produce no findings, and
+`../portfolio-before-fix` (the RFQ workflows before they got authentication) must produce
+exactly four, so a rule change that adds or drops a finding shows up as a failing test.

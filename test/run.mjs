@@ -72,9 +72,28 @@ test('good fixture has no findings', () => {
   assert.deepEqual(result.findings, []);
 });
 
-test('portfolio workflows: only the known RFQ authentication findings remain after review', () => {
-  const ignore = JSON.parse(fs.readFileSync(F('portfolio', '.prodcheck-ignore.json'), 'utf8')).ignore;
+const portfolioIgnore = () => JSON.parse(fs.readFileSync(F('portfolio', '.prodcheck-ignore.json'), 'utf8')).ignore;
+
+// The portfolio as it was before the RFQ endpoints got authentication: the current
+// workflows with the two RFQ files swapped for their earlier versions.
+function portfolioBeforeFix() {
+  const before = fs.readdirSync(F('portfolio-before-fix')).filter((f) => f.endsWith('.json'));
+  return fs.readdirSync(F('portfolio'))
+    .filter((f) => f.endsWith('.json') && !before.includes(f))
+    .map((f) => F('portfolio', f))
+    .concat(before.map((f) => F('portfolio-before-fix', f)));
+}
+
+test('portfolio workflows: nothing left after the reviewed exceptions', () => {
+  const ignore = portfolioIgnore();
   const result = runCheck({ targets: [F('portfolio')], ignore });
+  assert.deepEqual(result.findings, []);
+  assert.equal(result.suppressed.length, ignore.length);
+  assert.equal(result.scanned.workflows, 16);
+});
+
+test('portfolio before the fix: the four unauthenticated RFQ triggers are found', () => {
+  const result = runCheck({ targets: portfolioBeforeFix(), ignore: portfolioIgnore() });
   const got = result.findings.map((f) => `${f.severity} ${f.rule} ${f.workflow} / ${f.node}`).sort();
   assert.deepEqual(got, [
     'high WEBHOOK-NO-AUTH RFQ: API (webhooks) / GET /rfq/quote/xlsx',
@@ -82,14 +101,13 @@ test('portfolio workflows: only the known RFQ authentication findings remain aft
     'high WEBHOOK-NO-AUTH RFQ: API (webhooks) / POST /rfq/review/resolve',
     'high WEBHOOK-NO-AUTH RFQ: Upload form / RFQ upload form',
   ]);
-  assert.equal(result.suppressed.length, ignore.length);
   assert.equal(result.scanned.workflows, 16);
 });
 
 test('sub-workflows in the same scan are followed (RFQ engine is idempotent per PDF hash)', () => {
-  const result = runCheck({ targets: [F('portfolio')] });
+  const result = runCheck({ targets: portfolioBeforeFix() });
   assert.ok(!result.findings.some((f) => f.rule === 'WEBHOOK-NO-IDEMPOTENCY' && f.node === 'POST /rfq/quote'));
-  const alone = runCheck({ targets: [F('portfolio', '05-rfq-api.json')] });
+  const alone = runCheck({ targets: [F('portfolio-before-fix', '05-rfq-api.json')] });
   const f = alone.findings.find((x) => x.rule === 'WEBHOOK-NO-IDEMPOTENCY' && x.node === 'POST /rfq/quote');
   assert.ok(f, 'without the engine in the scan the finding is raised');
   assert.equal(f.severity, 'low');

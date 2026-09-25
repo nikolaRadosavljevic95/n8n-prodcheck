@@ -35,7 +35,7 @@ Every rule, why it matters and how to fix it: [RULES.md](RULES.md). The rules ar
 ## Sample reports
 
 - [Synthetic example](examples/sample-report-synthetic.md): workflows written to trigger every rule, on n8n 1.120.0.
-- [The author's own portfolio](examples/sample-report-portfolio.md): 16 production-style workflows from [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio). It found four real problems there (the RFQ demo's API and form have no authentication), which are left in the report on purpose.
+- [The author's own portfolio](examples/sample-report-portfolio.md): 16 production-style workflows from [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio). It found four real problems there: the RFQ demo's API and form accepted requests from anyone. They were fixed in [n8n-portfolio#5](https://github.com/nikolaRadosavljevic95/n8n-portfolio/pull/5), and the same check now reports nothing.
 
 ## Usage
 
@@ -100,7 +100,7 @@ npm run advisories       # refresh data/advisories.json from the npm advisory da
 npm run samples          # regenerate RULES.md and the sample reports
 ```
 
-Fixtures: `fixtures/bad` has one small workflow per rule and `fixtures/expected-bad.json` lists exactly which rules each must trigger; `fixtures/good` must produce nothing; `fixtures/portfolio` is a real set of 16 workflows whose remaining findings are asserted exactly.
+Fixtures: `fixtures/bad` has one small workflow per rule and `fixtures/expected-bad.json` lists exactly which rules each must trigger; `fixtures/good` must produce nothing; `fixtures/portfolio` is a real set of 16 workflows that must come out clean after the reviewed exceptions, and `fixtures/portfolio-before-fix` holds the two RFQ workflows as they were before they got authentication, which must produce exactly the four findings in the sample report.
 
 ## License
 

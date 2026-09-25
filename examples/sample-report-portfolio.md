@@ -1,6 +1,6 @@
 # Sample report: the author's own portfolio
 
-**Subject:** [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio), 16 workflows, run with the reviewed ignore list in fixtures/portfolio/.prodcheck-ignore.json  
+**Subject:** [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio), 16 workflows, as they were on 2026-09-24, with the reviewed exceptions in fixtures/portfolio/.prodcheck-ignore.json. The four findings below were fixed in [n8n-portfolio#5](https://github.com/nikolaRadosavljevic95/n8n-portfolio/pull/5); the same check on the fixed workflows reports 0 findings.  
 **Date:** 2026-09-25  
 **Scanned:** 16 workflow(s), 170 node(s)  
 **n8n version:** 2.40.5  
@@ -18,16 +18,16 @@
 
 **Fix first:**
 
-1. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "POST /rfq/quote"
-2. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "GET /rfq/quote/xlsx"
-3. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "POST /rfq/review/resolve"
-4. **HIGH** Public trigger accepts requests from anyone: RFQ: Upload form (portfolio/06-rfq-upload-form.json) → "RFQ upload form"
+1. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "POST /rfq/quote"
+2. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "GET /rfq/quote/xlsx"
+3. **HIGH** Public trigger accepts requests from anyone: RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "POST /rfq/review/resolve"
+4. **HIGH** Public trigger accepts requests from anyone: RFQ: Upload form (portfolio-before-fix/06-rfq-upload-form.json) → "RFQ upload form"
 
 ## Findings
 
 ### 1. [HIGH] Public trigger accepts requests from anyone
 
-- **Where:** RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "POST /rfq/quote"
+- **Where:** RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "POST /rfq/quote"
 - **Rule:** `WEBHOOK-NO-AUTH`
 - **What we found:** Webhook (POST /rfq/quote) has no authentication and no secret or signature check, and it reaches 1 node(s) that read or change data: "Run RFQ engine" (executeWorkflow).
 - **Why it matters:** Anyone who finds or guesses the URL can run the workflow. When the workflow writes data, sends messages or moves money, that is an open door, and webhook paths leak through logs, browser history and screenshots.
@@ -36,7 +36,7 @@
 
 ### 2. [HIGH] Public trigger accepts requests from anyone
 
-- **Where:** RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "GET /rfq/quote/xlsx"
+- **Where:** RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "GET /rfq/quote/xlsx"
 - **Rule:** `WEBHOOK-NO-AUTH`
 - **What we found:** Webhook (GET /rfq/quote/xlsx) has no authentication and no secret or signature check, and it reaches 2 node(s) that read or change data: "Load quote" (postgres), "Render quote" (executeWorkflow).
 - **Why it matters:** Anyone who finds or guesses the URL can run the workflow. When the workflow writes data, sends messages or moves money, that is an open door, and webhook paths leak through logs, browser history and screenshots.
@@ -45,7 +45,7 @@
 
 ### 3. [HIGH] Public trigger accepts requests from anyone
 
-- **Where:** RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "POST /rfq/review/resolve"
+- **Where:** RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "POST /rfq/review/resolve"
 - **Rule:** `WEBHOOK-NO-AUTH`
 - **What we found:** Webhook (POST /rfq/review/resolve) has no authentication and no secret or signature check, and it reaches 1 node(s) that read or change data: "Resolve line" (postgres).
 - **Why it matters:** Anyone who finds or guesses the URL can run the workflow. When the workflow writes data, sends messages or moves money, that is an open door, and webhook paths leak through logs, browser history and screenshots.
@@ -54,7 +54,7 @@
 
 ### 4. [HIGH] Public trigger accepts requests from anyone
 
-- **Where:** RFQ: Upload form (portfolio/06-rfq-upload-form.json) → "RFQ upload form"
+- **Where:** RFQ: Upload form (portfolio-before-fix/06-rfq-upload-form.json) → "RFQ upload form"
 - **Rule:** `WEBHOOK-NO-AUTH`
 - **What we found:** Form has no authentication and no secret or signature check, and it reaches 1 node(s) that read or change data: "Run RFQ engine" (executeWorkflow).
 - **Why it matters:** Anyone who finds or guesses the URL can run the workflow. When the workflow writes data, sends messages or moves money, that is an open door, and webhook paths leak through logs, browser history and screenshots.
@@ -79,7 +79,7 @@ These matched a rule but were reviewed and accepted, with the reason recorded in
 - `WEBHOOK-NO-AUTH` Mock: Agent LLM (portfolio/14-mock-agent-llm.json) → "POST /mock/llm-agent/chat/completions": Test double for the LLM provider. It only exists in the local test stack and is never deployed.
 - `WEBHOOK-NO-AUTH` Mock: OpenAI-compatible LLM (portfolio/10-mock-openai-compatible-llm.json) → "POST /mock/llm/chat/completions": Test double for the LLM provider. It only exists in the local test stack and is never deployed.
 - `WEBHOOK-NO-IDEMPOTENCY` Agent: Approvals and audit API (portfolio/16-agent-approvals-and-audit-api.json) → "POST /agent/approvals/decide": agent.decide_approval() locks the approval row (FOR UPDATE) and refuses a decision that is no longer pending. The end-to-end test 'Approving releases the money exactly once' approves twice and asserts one refund.
-- `WEBHOOK-NO-IDEMPOTENCY` RFQ: API (webhooks) (portfolio/05-rfq-api.json) → "POST /rfq/review/resolve": rfq.resolve_line() locks the quote, sets the line to the chosen SKU and upserts the customer part number (ON CONFLICT DO UPDATE), so repeating the request gives the same result.
+- `WEBHOOK-NO-IDEMPOTENCY` RFQ: API (webhooks) (portfolio-before-fix/05-rfq-api.json) → "POST /rfq/review/resolve": rfq.resolve_line() locks the quote, sets the line to the chosen SKU and upserts the customer part number (ON CONFLICT DO UPDATE), so repeating the request gives the same result.
 
 ## Scope and limitations
 
