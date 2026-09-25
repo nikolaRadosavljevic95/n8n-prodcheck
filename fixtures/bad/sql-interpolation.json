@@ -1,0 +1,84 @@
+{
+  "name": "Orders: lookup API",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "orders/by-customer",
+        "responseMode": "responseNode",
+        "options": {},
+        "authentication": "headerAuth"
+      },
+      "id": "00000000-0000-4000-8000-000000000016",
+      "name": "Orders by customer",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "wh-orders-by-customer"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT id, total FROM shop.orders WHERE customer_email = '{{ $json.query.email }}';",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000017",
+      "name": "Find orders",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { ok: true } }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000018",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Orders by customer": {
+      "main": [
+        [
+          {
+            "node": "Find orders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find orders": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureOrderslook"
+}

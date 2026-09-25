@@ -1,0 +1,66 @@
+{
+  "name": "Reports: nightly",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000036",
+      "name": "Every 15 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "00000000-0000-4000-8000-000000000037",
+      "name": "Done",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        440,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Every 15 minutes": {
+      "main": [
+        [
+          {
+            "node": "Done",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001",
+    "saveDataErrorExecution": "none"
+  },
+  "pinData": {
+    "Every 15 minutes": [
+      {
+        "json": {
+          "email": "jane.doe@example.com",
+          "note": "copied from a real run"
+        }
+      }
+    ]
+  },
+  "active": false,
+  "id": "FixtureReportsnig"
+}

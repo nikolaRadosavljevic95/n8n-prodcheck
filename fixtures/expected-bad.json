@@ -1,0 +1,44 @@
+{
+  "webhook-no-auth.json": [
+    "WEBHOOK-NO-AUTH"
+  ],
+  "hardcoded-secret.json": [
+    "HARDCODED-SECRET"
+  ],
+  "agent-write-tools.json": [
+    "AGENT-WRITE-TOOL",
+    "SQL-INTERPOLATION"
+  ],
+  "public-chat.json": [
+    "WEBHOOK-NO-AUTH"
+  ],
+  "sql-interpolation.json": [
+    "SQL-INTERPOLATION"
+  ],
+  "non-atomic-dedupe.json": [
+    "NON-ATOMIC-DEDUPE"
+  ],
+  "no-idempotency.json": [
+    "WEBHOOK-NO-IDEMPOTENCY"
+  ],
+  "responds-late.json": [
+    "WEBHOOK-RESPONDS-LATE"
+  ],
+  "http-reliability.json": [
+    "HTTP-NO-RETRY",
+    "HTTP-NO-TIMEOUT"
+  ],
+  "errors-swallowed.json": [
+    "ERRORS-SWALLOWED"
+  ],
+  "execute-command.json": [
+    "EXECUTE-COMMAND"
+  ],
+  "no-error-workflow.json": [
+    "NO-ERROR-WORKFLOW"
+  ],
+  "export-hygiene.json": [
+    "PINDATA-IN-EXPORT",
+    "SAVE-ERROR-EXECUTIONS-OFF"
+  ]
+}

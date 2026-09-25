@@ -1,0 +1,65 @@
+{
+  "name": "Payments: create order",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "payments",
+        "responseMode": "onReceived",
+        "options": {},
+        "authentication": "headerAuth"
+      },
+      "id": "00000000-0000-4000-8000-000000000023",
+      "name": "Payment webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "wh-payments"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://pos.example.test/api/orders",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { customer: $json.body.data.object.customer, amount: $json.body.data.object.amount } }}",
+        "options": {
+          "timeout": 5000
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000024",
+      "name": "Create POS order",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3
+    }
+  ],
+  "connections": {
+    "Payment webhook": {
+      "main": [
+        [
+          {
+            "node": "Create POS order",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixturePaymentscr"
+}

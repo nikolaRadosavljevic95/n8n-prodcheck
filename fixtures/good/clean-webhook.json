@@ -1,0 +1,120 @@
+{
+  "name": "Events: good example",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "events",
+        "responseMode": "responseNode",
+        "options": {},
+        "authentication": "headerAuth"
+      },
+      "id": "00000000-0000-4000-8000-000000000038",
+      "name": "Signed webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ],
+      "webhookId": "wh-events"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO shop.inbox (event_id, payload) VALUES ($1, $2) ON CONFLICT (event_id) DO NOTHING RETURNING event_id;",
+        "options": {
+          "queryReplacement": "={{ [$json.body.id, JSON.stringify($json.body)] }}"
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000039",
+      "name": "Store event once",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { ok: true } }}",
+        "options": {}
+      },
+      "id": "00000000-0000-4000-8000-000000000040",
+      "name": "Acknowledge",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://pos.example.test/api/orders",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Idempotency-Key",
+              "value": "={{ $json.event_id }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 5000
+        }
+      },
+      "id": "00000000-0000-4000-8000-000000000041",
+      "name": "Call POS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    }
+  ],
+  "connections": {
+    "Signed webhook": {
+      "main": [
+        [
+          {
+            "node": "Store event once",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store event once": {
+      "main": [
+        [
+          {
+            "node": "Acknowledge",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Call POS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ErrHandler000001"
+  },
+  "pinData": {},
+  "active": false,
+  "id": "FixtureEventsgood"
+}
