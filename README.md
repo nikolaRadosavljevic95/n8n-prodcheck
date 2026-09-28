@@ -89,8 +89,7 @@ It is a static check of workflow JSON. It does not run your workflows, call your
 
 The checker finds the patterns. Deciding which ones matter for your business, and fixing them without breaking production, is the part that needs a person. I do fixed-price reviews of n8n setups (a written report ranked by severity, with a fix plan) and the fixes themselves, delivered as workflows-as-code with end-to-end tests like the ones in [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio).
 
-<!-- TODO: replace the link below with the Upwork or Contra profile once it is live -->
-Get in touch through my GitHub profile: [github.com/nikolaRadosavljevic95](https://github.com/nikolaRadosavljevic95).
+Get in touch through my Upwork profile: [Nikola R. on Upwork](https://www.upwork.com/freelancers/~01747583ba0c055872).
 
 ## Development
 
