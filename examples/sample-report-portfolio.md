@@ -1,10 +1,10 @@
 # Sample report: the author's own portfolio
 
 **Subject:** [n8n-portfolio](https://github.com/nikolaRadosavljevic95/n8n-portfolio), 16 workflows, as they were on 2026-09-24, with the reviewed exceptions in fixtures/portfolio/.prodcheck-ignore.json. The four findings below were fixed in [n8n-portfolio#5](https://github.com/nikolaRadosavljevic95/n8n-portfolio/pull/5); the same check on the fixed workflows reports 0 findings.  
-**Date:** 2026-09-25  
+**Date:** 2026-10-03  
 **Scanned:** 16 workflow(s), 170 node(s)  
 **n8n version:** 2.40.5  
-**Tool:** [n8n-prodcheck](https://github.com/nikolaRadosavljevic95/n8n-prodcheck), advisory data from 2026-09-25
+**Tool:** [n8n-prodcheck](https://github.com/nikolaRadosavljevic95/n8n-prodcheck), advisory data from 2026-10-03
 
 ## Summary
 
