@@ -1,10 +1,10 @@
 # Sample report: synthetic example
 
 **Subject:** Synthetic workflows written to trigger every rule (fixtures/bad), checked as if they ran on n8n 1.120.0. Not a real client.  
-**Date:** 2026-10-03  
+**Date:** 2026-10-10  
 **Scanned:** 13 workflow(s), 37 node(s)  
 **n8n version:** 1.120.0  
-**Tool:** [n8n-prodcheck](https://github.com/nikolaRadosavljevic95/n8n-prodcheck), advisory data from 2026-10-03
+**Tool:** [n8n-prodcheck](https://github.com/nikolaRadosavljevic95/n8n-prodcheck), advisory data from 2026-10-10
 
 ## Summary
 
@@ -29,7 +29,7 @@
 
 - **Where:** n8n instance
 - **Rule:** `N8N-VERSION-ADVISORY`
-- **What we found:** n8n 1.120.0 is affected by 140 published advisories (22 critical, 51 high, 67 medium). Current stable is 2.41.6.
+- **What we found:** n8n 1.120.0 is affected by 140 published advisories (22 critical, 51 high, 67 medium). Current stable is 2.42.6.
 - **Details:**
 
 ```
