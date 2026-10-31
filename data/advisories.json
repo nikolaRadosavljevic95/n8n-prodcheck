@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-24T06:20:51.764Z",
+ "generatedAt": "2026-10-31T06:20:44.112Z",
  "source": "npm advisory database (registry.npmjs.org/-/npm/v1/security/advisories/bulk), which mirrors the GitHub Advisory Database",
- "stable": "2.44.6",
+ "stable": "2.45.7",
  "advisories": [
   {
    "url": "https://github.com/advisories/GHSA-2434-3x6q-8r99",
